@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loan-calculator">
+        <div class="top">
+            <h2>Công cụ EMI</h2>
+            <form action="#">
+                <div class="group">
+                    <div class="title">Số tiền vay</div>
+                    <input type="text" class="loan-amount" value="100000">
+                </div>
+                <div class="group">
+                    <div class="title">Lãi suất (năm)</div>
+                    <input type="text" class="interest-rate" value="7.5">
+                </div>
+                <div class="group">
+                    <div class="title">Thời hạn vay (tháng)</div>
+                    <input type="text" class="loan-tenure" value="240">
+                </div>
+            </form>
+        </div>
+
+        <div class="result">
+            <div class="left">
+                <div class="loan-emi">
+                    <h3>Trả góp hàng tháng</h3>
+                    <div class="value">123</div>
+                </div>
+                <div class="total-interest">
+                    <h3>Tổng lãi phải trả</h3>
+                    <div class="value">1234</div>
+                </div>
+                <div class="total-amount">
+                    <h3>Tổng nợ cần trả</h3>
+                    <div class="value">12345</div>
+                </div>
+
+                <button class="calculate-btn">
+                    Tính toán
+                </button>
+            </div>
+            <div class="right">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+        integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
